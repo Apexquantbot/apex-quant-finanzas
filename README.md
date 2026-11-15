@@ -11,7 +11,7 @@ Cada una sigue funcionando por su lado (sus datos, sus avisos y su cron):
 | Sección | Repositorio | Web |
 |---|---|---|
 | Pro | Apexquantbot/apex-quant-pro | https://apexquantbot.github.io/apex-quant-pro/ |
-| Mercados | franciscoserranoadt/bot-quant-mercados | https://franciscoserranoadt.github.io/bot-quant-mercados/ |
+| Mercados | Apexquantbot/bot-quant-mercados | https://apexquantbot.github.io/bot-quant-mercados/ |
 
 Cualquier cambio que se haga en Pro o en Mercados aparece aquí solo, sin tocar nada.
 Si algún día cambia la dirección de una de ellas (por ejemplo, al pasar Mercados a la organización Apexquantbot), se actualiza en `index.html` (bloque `APPS`).
