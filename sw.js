@@ -1,7 +1,7 @@
 // Service Worker - Apex Quant Finanzas v1.0
 // Solo guarda la "carcasa" (pestañas e iconos). Las apps Pro y Mercados
 // se cargan siempre frescas desde sus propias webs.
-const CACHE_NAME = 'apex-finanzas-v1.1';
+const CACHE_NAME = 'apex-finanzas-v1.2';
 const SHELL = ['./', './index.html', './manifest.json', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', (e) => {

@@ -101,6 +101,28 @@
       background: linear-gradient(135deg, var(--verde), var(--cian));
       color: #04121f; font-family: inherit; font-weight: 700; font-size: 14px;
     }
+    /* ---------- Apaisado: móvil girado, tablet o pantalla del coche ----------
+       Si la pantalla es más ancha que alta y de poca altura, las pestañas pasan
+       a una barra vertical a la izquierda y la app aprovecha todo el alto. */
+    @media (orientation: landscape) and (max-height: 640px) {
+      body { flex-direction: row; }
+      .barra {
+        flex-direction: column; justify-content: space-between; gap: 10px;
+        width: calc(84px + env(safe-area-inset-left, 0px));
+        padding: calc(env(safe-area-inset-top, 0px) + 8px) 8px
+                 calc(env(safe-area-inset-bottom, 0px) + 8px)
+                 calc(env(safe-area-inset-left, 0px) + 8px);
+        border-bottom: 0; border-right: 1px solid var(--borde);
+      }
+      .pestanas { flex: 0 0 auto; flex-direction: column; width: 100%; }
+      .pestana { flex-direction: column; gap: 5px; padding: 12px 2px; font-size: 11px; }
+      .pestana .ico { font-size: 22px; }
+      .recargar { width: 100%; }
+    }
+    /* Tablet grande en apaisado: barra arriba, pestañas centradas */
+    @media (orientation: landscape) and (min-height: 641px) {
+      .pestanas { max-width: 560px; margin: 0 auto; }
+    }
   </style>
 </head>
 <body>
